@@ -1,120 +1,491 @@
-body{
-    background-image: url(../assets/img_4.jpg);
-     background-repeat: no-repeat;
-     background-size:cover;
-     color: #fff;
-   }
+* {
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
   
-  nav{
-    display: flex;
-    justify-content: end;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100px;
-    color: #fff;
-    float: right;
-    
-    
-  }
-  nav a {
-    
-    float:left;
-    color: #fff;
-    text-decoration: none;
-    padding: 25px;
-    padding-top: 0px;
-    padding-right: 20px;
-    font-size: 30px;
-   
+}
 
-  }
- 
- .greet{
-    color: #356c88;
-    border: 3px solid  #356c88;
-    border-radius: 25px;
-    font-size: 2.3em;
-    width: 145px;
-    padding-left: 25px;
-    margin-left: 278px;
-    margin-top: 45px ;
 
-  }
- 
+header{
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  z-index: 5;
+}
 
-  .present{
-    color:  #356c88 ;
-    text-decoration: underline;
-  }
- #main-name{
-  border: 1px solid transparent;
-  width: 180px;
-  height: 60px;
-  margin-left: 250px;
-  margin-top: 300px;
+
+
+
+.nav {
+  background-color: black;
+  width: 100%;
+  height:10vh;
+  position: sticky;
+  top:0;
+
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 30px;
+
+
+}
+
+ul li {
+  padding-inline: 15px;
+  font-size: 2.3em;
+  
+  
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+nav a:hover,
+a.active {
+  color: #2eb9ff;
+}
+
+
+
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #424242;
+}
+
+.progress-bar {
+  height: 5px;
+  background: rgb(46, 185, 255);
+  width: 0%;
+}
+
+
+#home {
+  background-image: url(../assets/img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top:50px;
+  height: 100vh;
+}
+
+.name1 {
+  color: white;
+  position: absolute;
+  top: 335px;
+  left: 200px;
+  font-size: 2.5em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 50;
+  letter-spacing: 5px;
+
+
+
+
+}
+
+.desg {
+  position: absolute;
+  top: 446px;
+  left: 245px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  border-top: 2px solid #2eb9ff;
+
+
+}
+.greet{
+  position: absolute;
+  top: 500px;
+  left: 250px;
   font-size: 1.9em;
-  font-weight: bolder;
-  
-  
-   }
-   .background-black{
-    background-image: none;
-    background-color: black;
-    background-repeat: no-repeat;
-   }
-   #desg{
-    border-top: 3px solid  #356c88 ;
-    width: 190px;
-    margin-left: 270px;
-    margin-top: 30px;
-    padding-top: 4px;
-    padding-left: 9px;
-    font-size: 1.4em;
-   }
-   
-   .about-content{
-    font-size: 2rem;
-   }
-  
-   .list{
-    font-size: 2.5em;
-    padding: 200px 400px;
-    line-height:2 ;
-    width: 680px;
-   }
-   .contact-info{
-    font-size: 2.5em;
-    padding: 200px 400px;
-    line-height:2 ;
+  color: #2eb9ff;
+  border: 2px solid #2eb9ff ;
+  padding: 5px 15px 5px 15px;
+  border-radius: 40px;
+}
 
-   }
-   .about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-     
-   }
-   .img{
-    
-   position: absolute;
-   top: 100px;
-   left: -45px;
+#about {
+  background-color: black ;
+  background-blend-mode:lighten;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  /* top: -10px; */
+  color:white;
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
   
+}
+
+#about h1{
+  position: absolute;
+  top: 12vh;
+  left: 80px;
+  font-size: 2em;
+  text-decoration: underline;
+
+}
+
+.img {
+
+  position: absolute;
+  top: 115px;
+  left: -45px;
+}
+
+.content  {
+  font-size: 2em;
+  position: absolute;
+  top: 330px;
+  left: 600px;
+}
+ .content p{
+  line-height: 45px;
+
+ }
+
+#education{
+  background-image: url(../assets/img_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+ #education h1  {
+  text-decoration: underline;
+  z-index: 4;
+  position: absolute;
+  top: 214vh;
+  left: 80px;
+  font-size: 2em;
+  color:white;
+ }
+
+ #education p  {
+ position: absolute;
+  top: 250vh;
+  left: 100px;
+  font-size: 2em;
+  color: white;
+  text-align: left;
+  width: 80%;
+ }
   
-   }
-   .content{
-    font-size:2em;
-    position: absolute;
-    top: 260px;
-    left: 700px;
-   }
+ #skill{
+  background-image: url(../assets/img_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-blend-mode:lighten;
+  /* filter: blur(2px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
-   main a{
-    
-    text-decoration: none;
-    color: white;
+#skill h1{
+  text-decoration: underline;
+  padding-bottom: 600px;
+  padding-right: 1200px;
+  color: white;
+  font-size: 2em;
+}
+.skills{
+  position: absolute;
+  top: 325vh;
+}
+#skill ul{
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content:space-evenly ;
+  width: 100%;
+  
+}
+
+#skill ul li{
+ padding: 0px 100px 0px 100px;
+}
+
+#html{
+  position: absolute;
+  top: 333vh;
+  left: 14vw; 
+}
+
+.progress-container1 {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring1 {
+  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+}
+
+.progress-ring__circle1 {
+  stroke-dasharray: 314; /* Circumference of the circle (2 * pi * r where r = 50) */
+  stroke-dashoffset: 314; /* Initially hide the whole circle */
+  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+}
+
+.progress-text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #e34c26;
+}
+#css{
+  position: absolute;
+  top: 333vh;
+  left: 33vw; 
+}
 
 
-   }
+
+.progress-container2 {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring2 {
+  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+ }
+
+ .progress-ring__circle2 {
+  stroke-dasharray: 314; /*Circumference of the circle (2 * pi * r where r = 50) */
+  stroke-dashoffset: 314; /* Initially hide the whole circle */
+  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+}
+
+.progress-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #563d7c;
+}
+
+#js{
+  position: absolute;
+  top: 333vh;
+  left: 53vw; 
+}
+
+.progress-container3 {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring3 {
+  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+}
+
+.progress-ring__circle3 {
+  stroke-dasharray: 314; /* Circumference of the circle (2 * pi * r where r = 50) */
+  stroke-dashoffset: 314; /* Initially hide the whole circle */
+  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+}
+
+.progress-text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1e05a;
+}
+
+#mysql{
+  position: absolute;
+  top: 333vh;
+  left: 75vw; 
+}
+
+.progress-container4 {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring4 {
+  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+}
+
+.progress-ring__circle4 {
+  stroke-dasharray: 314; /* Circumference of the circle (2 * pi * r where r = 50) */
+  stroke-dashoffset: 314; /* Initially hide the whole circle */
+  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+}
+
+.progress-text4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #4479A1;
+} 
+
+.heatmap h4{
+ position: absolute;
+ color: white;
+left: 6vw;
+font-size: 2em;
+text-decoration: underline;
+}
+
+#github-heatmap{
+  position: absolute;
+  top: 333vh;
+  left:25%;
+}
+ 
+
+ #contact{
+  background-image: url(../assets/img_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+#contact h1{
+  color: white;
+  font-size: 2em;
+  text-decoration: underline;
+  padding-left: 90px;
+  padding-top: 110px;
+}
+ .contact-container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 490px;
+  position: relative;
+  top: 20px;
+ 
+}
+
+
+/* Header styles */
+.contact-container h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+/* Form styles */
+.contact-form label {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2eb9ff;
+}
+
+.contact-form button {
+  background-color: #2eb9ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #218dcc;
+}
+
+.fa-brands,
+.fa-solid{
+ font-size: 3.7em;
+ box-sizing: border-box;
+ width: 63px;
+ height: 63px;
+ background-color: white;
+ border-radius: 10px;
+ color: black;
+}
+.fa-github{
+  position: relative;
+  bottom: -10vh;
+  left: 32%;
+  padding-left: 0.5px;
+}
+.fa-linkedin-in{
+  position: relative;
+  bottom: -10vh;
+  left: 37%;
+  padding-top: 3px;
+padding-left: 3px;
+}
+.fa-envelope{
+  position: relative;
+  bottom: -10vh;
+  left: 42%;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+.fa-instagram{
+  position: relative;
+  bottom: -10vh;
+  left: 47%;
+  padding-left: 5px;
+  padding-top: 0.7px;
+}
