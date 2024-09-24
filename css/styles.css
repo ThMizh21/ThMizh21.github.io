@@ -185,6 +185,9 @@ nav a:hover {
   text-align: left;
   width: 80%;
  }
+ .highlight{
+  color: #2eb9ff;
+ }
   
  #skill{
   background-image: url(../assets/img_1.jpg);
