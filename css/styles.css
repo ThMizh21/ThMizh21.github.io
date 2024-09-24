@@ -79,7 +79,7 @@ nav a:hover {
 .name1 {
   color: white;
   position: absolute;
-  top: 335px;
+  top: 370px;
   left: 200px;
   font-size: 2.5em;
   font-family: "Oswald", sans-serif;
@@ -94,7 +94,7 @@ nav a:hover {
 .desg {
   position: absolute;
   top: 446px;
-  left: 245px;
+  left: 275px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
@@ -104,15 +104,19 @@ nav a:hover {
 }
 .greet{
   position: absolute;
-  top: 500px;
-  left: 250px;
+  top: 250px;
+  left: 290px;
   font-size: 1.9em;
   color: #2eb9ff;
   border: 2px solid #2eb9ff ;
   padding: 5px 15px 5px 15px;
   border-radius: 40px;
 }
-
+.greet:hover{
+  color: white;
+  background-color:#2eb9ff ;
+  border: 2px solid white ;
+}
 #about {
   background-color: black ;
   background-blend-mode:lighten;
@@ -249,7 +253,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;
-  color: #e34c26;
+  color:red;
 }
 #css{
   position: absolute;
@@ -282,7 +286,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;
-  color: #563d7c;
+  color:orange;
 }
 
 #js{
@@ -314,7 +318,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;
-  color: #f1e05a;
+  color: #35a854;
 }
 
 #mysql{
@@ -346,7 +350,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;
-  color: #4479A1;
+  color: white;
 } 
 
 .heatmap h4{
@@ -361,6 +365,14 @@ text-decoration: underline;
   position: absolute;
   top: 333vh;
   left:25%;
+}
+
+#github-heatmap h2{
+  position:relative;
+  top: -35vh;
+  left: 74%;
+  z-index: 5;
+  width: 100px;
 }
  
 

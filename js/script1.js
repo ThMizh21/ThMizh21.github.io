@@ -14,5 +14,5 @@ function setProgress(percent) {
     document.getElementById('progress-text1').textContent = `${percent}%`;
 }
 
-// Example usage:
-setProgress(97); // Set progress to 67%
+
+setProgress(97); 
