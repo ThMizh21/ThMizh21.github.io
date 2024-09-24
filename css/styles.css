@@ -47,8 +47,7 @@ li a {
   
 }
 
-nav a:hover,
-a.active {
+nav a:hover {
   color: #2eb9ff;
 }
 
