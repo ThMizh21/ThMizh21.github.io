@@ -71,8 +71,6 @@ nav a:hover {
   background-image: url(../assets/img_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  top:50px;
   height: 100vh;
 }
 
@@ -136,8 +134,7 @@ nav a:hover {
   top: 12vh;
   left: 80px;
   font-size: 2em;
-  text-decoration: underline;
-
+  color: #2eb9ff;
 }
 
 .img {
@@ -167,23 +164,30 @@ nav a:hover {
   width: 100%;
 }
  #education h1  {
-  text-decoration: underline;
   z-index: 4;
   position: absolute;
   top: 214vh;
   left: 80px;
   font-size: 2em;
-  color:white;
- }
+  color: #2eb9ff; }
 
  #education p  {
- position: absolute;
-  top: 250vh;
-  left: 100px;
+ position: relative;
+  top: 40vh;
+  left: 150px;
   font-size: 2em;
   color: white;
   text-align: left;
   width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  width: 500px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+ 
  }
  .highlight{
   color: #2eb9ff;
@@ -204,11 +208,10 @@ nav a:hover {
  }
 
 #skill h1{
-  text-decoration: underline;
   padding-bottom: 600px;
   padding-right: 1200px;
-  color: white;
-  font-size: 2em;
+  color: #2eb9ff;
+    font-size: 2em;
 }
 .skills{
   position: absolute;
@@ -358,10 +361,9 @@ nav a:hover {
 
 .heatmap h4{
  position: absolute;
- color: white;
-left: 6vw;
+ color: #2eb9ff;
+ left: 6vw;
 font-size: 2em;
-text-decoration: underline;
 }
 
 #github-heatmap{
@@ -390,9 +392,8 @@ text-decoration: underline;
 }
 
 #contact h1{
-  color: white;
-  font-size: 2em;
-  text-decoration: underline;
+  color: #2eb9ff;
+    font-size: 2em;
   padding-left: 90px;
   padding-top: 110px;
 }
@@ -452,8 +453,8 @@ text-decoration: underline;
 }
 
 .contact-form button {
-  background-color: #2eb9ff;
-  color: white;
+  background-color: white;
+  color: #2eb9ff;
   padding: 12px 20px;
   border: none;
   border-radius: 10px;
@@ -463,6 +464,7 @@ text-decoration: underline;
 
 .contact-form button:hover {
   background-color: #218dcc;
+  color: white;
 }
 
 .fa-brands,
