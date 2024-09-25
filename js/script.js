@@ -5,21 +5,22 @@ window.onscroll = function() {
 };
 
 function myFunction() {
+
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// Get all navigation links
-const navLinks = document.querySelectorAll('.nav-link');
-// Get all section elements
+
+const navLinks = document.querySelectorAll('.nav');
+
 const sections = document.querySelectorAll('section');
 
 // Function to update active link based on scroll position
 function updateActiveLink() {
   let currentSection = '';
-  // Loop through each section
+ 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
     if (window.scrollY >= sectionTop - 60) {
