@@ -1,72 +1,70 @@
+
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   
 }
 
-
-header{
+/* Navigation bar */
+header {
   position: fixed;
+  top: 0;
   width: 100%;
-  height: 15vh;
-  z-index: 5;
+  background-color: #000000;
+  z-index: 1000;
+  height: 10vh;
 }
 
-
-
-
-.nav {
-  background-color: black;
-  width: 100%;
-  height:10vh;
-  position: sticky;
-  top:0;
-
-}
-
-.nav ul {
+nav ul {
+  list-style-type: none;
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding-top: 30px;
-
-
+  padding-top: 25px;
 }
 
-ul li {
-  padding-inline: 15px;
-  font-size: 2.3em;
-  
-  
+nav ul li {
+  margin: 0 15px;
 }
 
-li a {
+nav ul li a {
   text-decoration: none;
   color: white;
-  
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 8px;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #2eb9ff;
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00ccff;
+  border-bottom: 2px solid #2eb9ff;
 }
 
-
-
-
+/* Progress bar  */
 .progress-container {
+  position: fixed;
   width: 100%;
   height: 5px;
-  background: #424242;
+  background: #ccc;
+  top: 10vh;
+  z-index: 999;
 }
 
 .progress-bar {
   height: 5px;
-  background: rgb(46, 185, 255);
+  background: #2eb9ff;
   width: 0%;
 }
 
 
+section {
+  height: 100vh;
+}
+
+/* Home */
 #home {
   background-image: url(../assets/img_1.jpg);
   background-repeat: no-repeat;
@@ -76,32 +74,30 @@ nav a:hover {
 
 .name1 {
   color: white;
-  position: absolute;
+  position: relative;
   top: 370px;
   left: 200px;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: "Oswald", sans-serif;
   font-weight: 50;
   letter-spacing: 5px;
-
-
-
-
+  width: 500px;
 }
 
 .desg {
-  position: absolute;
-  top: 446px;
+  position: relative;
+  top:370px;
   left: 275px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   border-top: 2px solid #2eb9ff;
+  width: 182px;
 
 
 }
 .greet{
-  position: absolute;
+  position: relative;
   top: 250px;
   left: 290px;
   font-size: 1.9em;
@@ -109,19 +105,21 @@ nav a:hover {
   border: 2px solid #2eb9ff ;
   padding: 5px 15px 5px 15px;
   border-radius: 40px;
+  width: 140px;
 }
 .greet:hover{
   color: white;
   background-color:#2eb9ff ;
   border: 2px solid white ;
 }
+
+/* About */
 #about {
   background-color: black ;
   background-blend-mode:lighten;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  /* top: -10px; */
   color:white;
   z-index: 0;
   height: 100vh;
@@ -155,6 +153,7 @@ nav a:hover {
 
  }
 
+ /* Education */
 #education{
   background-image: url(../assets/img_1.jpg);
   background-size: cover;
@@ -193,6 +192,7 @@ nav a:hover {
   color: #2eb9ff;
  }
   
+ /* Skills */
  #skill{
   background-image: url(../assets/img_1.jpg);
   background-size: cover;
@@ -201,21 +201,22 @@ nav a:hover {
   width: 100%;
   height: 100vh;
   background-blend-mode:lighten;
-  /* filter: blur(2px); */
   display: flex;
   justify-content: center;
   align-items: center;
  }
 
 #skill h1{
+
   padding-bottom: 600px;
-  padding-right: 1200px;
+  padding-right: 720px;
   color: #2eb9ff;
     font-size: 2em;
 }
 .skills{
   position: absolute;
-  top: 325vh;
+  left: 200px;
+  top: 320vh;
 }
 #skill ul{
   list-style: none;
@@ -228,12 +229,13 @@ nav a:hover {
 
 #skill ul li{
  padding: 0px 100px 0px 100px;
+ font-size: 1.5em;
 }
 
 #html{
-  position: absolute;
-  top: 333vh;
-  left: 14vw; 
+  position: relative;
+  right: 655px;
+  bottom: 150px;
 }
 
 .progress-container1 {
@@ -262,9 +264,9 @@ nav a:hover {
   color:red;
 }
 #css{
-  position: absolute;
-  top: 333vh;
-  left: 33vw; 
+  position: relative;
+  right: 512px;
+  bottom: 150px;
 }
 
 
@@ -276,13 +278,13 @@ nav a:hover {
 }
 
 .progress-ring2 {
-  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+  transform: rotate(-90deg); 
  }
 
  .progress-ring__circle2 {
-  stroke-dasharray: 314; /*Circumference of the circle (2 * pi * r where r = 50) */
-  stroke-dashoffset: 314; /* Initially hide the whole circle */
-  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+  stroke-dasharray: 314; 
+  stroke-dashoffset: 314; 
+  transition: stroke-dashoffset 0.5s; 
 }
 
 .progress-text2 {
@@ -296,9 +298,9 @@ nav a:hover {
 }
 
 #js{
-  position: absolute;
-  top: 333vh;
-  left: 53vw; 
+  position: relative;
+  right: 360px; 
+  bottom: 150px;
 }
 
 .progress-container3 {
@@ -308,13 +310,13 @@ nav a:hover {
 }
 
 .progress-ring3 {
-  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+  transform: rotate(-90deg); 
 }
 
 .progress-ring__circle3 {
-  stroke-dasharray: 314; /* Circumference of the circle (2 * pi * r where r = 50) */
-  stroke-dashoffset: 314; /* Initially hide the whole circle */
-  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+  stroke-dasharray: 314; 
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 0.5s;
 }
 
 .progress-text3 {
@@ -328,9 +330,9 @@ nav a:hover {
 }
 
 #mysql{
-  position: absolute;
-  top: 333vh;
-  left: 75vw; 
+  position: relative;
+  right: 180px;
+  bottom: 150px;
 }
 
 .progress-container4 {
@@ -340,13 +342,13 @@ nav a:hover {
 }
 
 .progress-ring4 {
-  transform: rotate(-90deg); /* Rotate the SVG to start the progress from the top */
+  transform: rotate(-90deg); 
 }
 
 .progress-ring__circle4 {
-  stroke-dasharray: 314; /* Circumference of the circle (2 * pi * r where r = 50) */
-  stroke-dashoffset: 314; /* Initially hide the whole circle */
-  transition: stroke-dashoffset 0.5s; /* Smooth transition */
+  stroke-dasharray: 314; 
+   stroke-dashoffset: 314; 
+  transition: stroke-dashoffset 0.5s;
 }
 
 .progress-text4 {
@@ -360,148 +362,143 @@ nav a:hover {
 } 
 
 .heatmap h4{
- position: absolute;
- color: #2eb9ff;
- left: 6vw;
-font-size: 2em;
-}
-
-#github-heatmap{
   position: absolute;
-  top: 333vh;
-  left:25%;
-}
-
-#github-heatmap h2{
-  position:relative;
-  top: -35vh;
-  left: 74%;
-  z-index: 5;
-  width: 100px;
-}
+  color: #2eb9ff;
+  left: 5vw;
+  top:343vh;
+ font-size: 2em;
+ }
  
-
- #contact{
-  background-image: url(../assets/img_1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+ #github-heatmap{
+   position: absolute;
+   top: 325vh;
+   left:25%;
+ }
+ 
+   
+   #contact{
+    background-image: url(../assets/img_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    
+  }
   
-}
+  #contact h1{
+    color: #2eb9ff;
+      font-size: 2em;
+    padding-left: 90px;
+    padding-top: 110px;
+  }
+   .contact-container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 490px;
+    position: relative;
+    top: 20px;
+   
+  }
+  
+  
+  /* contact */
+  .contact-container h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 400;
+  }
+  
+  .contact-form label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 16px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #2eb9ff;
+  }
+  
+  .contact-form button {
+    background-color: white;
+    color: #2eb9ff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #218dcc;
+    color: white;
+  }
+  
+  /* Icons */
+  .fa-brands,
+  .fa-solid{
+   font-size: 3.7em;
+   box-sizing: border-box;
+   width: 63px;
+   height: 63px;
+   background-color: white;
+   border-radius: 10px;
+   color: black;
+  }
+  .fa-github{
+    position: relative;
+    bottom: -10vh;
+    left: 32%;
+    padding-left: 0.5px;
+  }
+  .fa-linkedin-in{
+    position: relative;
+    bottom: -10vh;
+    left: 37%;
+    padding-top: 3px;
+  padding-left: 3px;
+  }
+  .fa-envelope{
+    position: relative;
+    bottom: -10vh;
+    left: 42%;
+    padding-left: 2px;
+    padding-top: 3px;
+  }
+  
+  .fa-instagram{
+    position: relative;
+    bottom: -10vh;
+    left: 47%;
+    padding-left: 5px;
+    padding-top: 0.7px;
+  }
 
-#contact h1{
-  color: #2eb9ff;
-    font-size: 2em;
-  padding-left: 90px;
-  padding-top: 110px;
-}
- .contact-container {
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 30px;
-  width: 400px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-left: 490px;
-  position: relative;
-  top: 20px;
- 
-}
 
-
-/* Header styles */
-.contact-container h2 {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-  font-weight: 400;
-}
-
-/* Form styles */
-.contact-form label {
-  display: block;
-  color: white;
-  margin-bottom: 8px;
-  text-align: left;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  color: white;
-  font-size: 16px;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #2eb9ff;
-}
-
-.contact-form button {
-  background-color: white;
-  color: #2eb9ff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #218dcc;
-  color: white;
-}
-
-.fa-brands,
-.fa-solid{
- font-size: 3.7em;
- box-sizing: border-box;
- width: 63px;
- height: 63px;
- background-color: white;
- border-radius: 10px;
- color: black;
-}
-.fa-github{
-  position: relative;
-  bottom: -10vh;
-  left: 32%;
-  padding-left: 0.5px;
-}
-.fa-linkedin-in{
-  position: relative;
-  bottom: -10vh;
-  left: 37%;
-  padding-top: 3px;
-padding-left: 3px;
-}
-.fa-envelope{
-  position: relative;
-  bottom: -10vh;
-  left: 42%;
-  padding-left: 2px;
-  padding-top: 3px;
-}
-
-.fa-instagram{
-  position: relative;
-  bottom: -10vh;
-  left: 47%;
-  padding-left: 5px;
-  padding-top: 0.7px;
-}

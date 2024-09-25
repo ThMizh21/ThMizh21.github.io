@@ -2,205 +2,192 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="This is the porfolio of muthamizhan">
-  <title>Muthamizhan Boobalan</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
-    integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <script src="./js/script.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Progress and Active Link Highlight</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Link to CSS file -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Noto+Serif+Old+Uyghur&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/img_6.png">
 
-
-  <link rel="icon" type="image/x-icon" href="./assets/img_6.png">
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <section class="container">
-    <header>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home" class="active">
-              <h6>Home</h6>
-            </a>
-          </li>
-          <li> <a href="#about">
-              <h6>About</h6>
-            </a>
-          </li>
-          <li><a href="#education">
-              <h6>Education </h6>
-            </a>
-          </li>
-          <li>
-            <a href="#skill">
-              <h6>Skills</h6>
-            </a>
-          </li>
-          <li><a href="#contact">
-              <h6>Contact</h6>
-            </a>
-          </li>
-        </ul>
 
-      </nav>
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skill" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
     </header>
 
-    <main>
-      <!-- HOME -->
-      <section id="home">
+    <!-- Home -->
+    <section id="home">
+        <div class="greet">
+            <P>HELLO!</P>
+
+        </div>
         <div class="name1">
-          <h1>MUTHAMIZHAN</h1>
-      </div>
-      <div class="desg">
-        <p>web Developer</p>
-      </div>
-      
-      <div class="greet">
-        <P>HELLO!</P>
-      </section>
-      </div>
-  </section>
-  
-  <!-- About -->
-  <section id="about">
-    <h1>ABOUT:</h1>
-    <section class="img">
-      <img src="./assets/img_3.png" alt="ThMizh" width="700px">
-    </section>
-    <section class="content ">
-      <p>I am Muthamizhan. I was born and brought up in Nagapattinam, which is my native place.
-        My father's name is Boobalan, and my mother's name is Thennazhagi. As I am more interested in tech,
-        I joined the academy run by Freshworks called the Freshworks STS Software Academy. My hobbies are reading novels,
-         listening to songs, and playing video games.</p>
-    </section>
-  </section>
-  <!-- Education -->
-  <section id="education">
-    <h1>EDUCATION:</h1>
-    <P>I have completed 10th grade in the CBSE board with <span class="highlight">71%</span>.
-      I completed 12th grade in the state board with <span class="highlight">81%</span>.
-      I am currently attending Freshworks Software academy.
-    </P>
-  </section>
-  <!-- Skill -->
-  <section id="skill">
-    <h1>SKILLS:</h1>
-    <section class="skills">
-
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-      </ul>
-    </section>
-   <!-- HTML -->
-    <section id="html">
-    
-
-      <div class="progress-container1">
-        <svg class="progress-ring1" width="120" height="120">
-          <circle class="progress-ring__circle1" stroke="#e34c26" stroke-width="10" fill="transparent" r="50" cx="60"
-            cy="60" />
-        </svg>
-        <div class="progress-text1" id="progress-text1">0%</div>
-        <script src="./js/script1.js"></script>
-      </div>
+            <h1>MUTHAMIZHAN</h1>
+        </div>
+        <div class="desg">
+            <p>web Developer</p>
+        </div>
     </section>
 
-    <!-- CSS -->
-    <section id="css">
-      <div class="progress-container2">
-        <svg class="progress-ring2" width="120" height="120">
-
-          <circle class="progress-ring__circle2" stroke="#ffa500" stroke-width="10" fill="transparent" r="50" cx="60"
-            cy="60" />
-        </svg>
-        <div class="progress-text2" id="progress-text2">0%</div>
-        <script src="./js/script2.js"></script>
+    <!-- About -->
+    <section id="about">
+        <h1>ABOUT:</h1>
+        <div class="img">
+            <img src="./assets/img_3.png" alt="ThMizh" width="700px">
+        </div>
+        <div class="content ">
+            <p>I am Muthamizhan. I was born and brought up in Nagapattinam, which is my native place.
+                My father's name is Boobalan, and my mother's name is Thennazhagi. As I am more interested in tech,
+                I joined the academy run by Freshworks called the Freshworks STS Software Academy.My hobbies are reading
+                novels,
+                listening to songs, and playing video games.</p>
+        </div>
     </section>
-    
-    <!-- JavaScript -->
-    <section id="js">
-      <div class="progress-container3">
-        <svg class="progress-ring3" width="120" height="120">
-          <circle class="progress-ring__circle3" stroke="#35a854" stroke-width="10" fill="transparent" r="50" cx="60"
-            cy="60" />
-        </svg>
-        <div class="progress-text3" id="progress-text3">0%</div>
-        <script src="./js/script3.js"></script>
-      </div>
-    </section>
-
-    <!-- MySQL -->
-    <section id="mysql">
-      <div class="progress-container4">
-
-        <svg class="progress-ring4" width="120" height="120">
-          <circle class="progress-ring__circle4" stroke="#ffffff" stroke-width="10" fill="transparent" r="50" cx="60"
-            cy="60" />
-        </svg>
-        <div class="progress-text4" id="progress-text4">0%</div>
-        <script src="./js/script4.js"></script>
-      </div>
+ 
+    <!-- Education -->
+    <section id="education">
+        <h1>EDUCATION:</h1>
+        <P>I have completed 10th grade in the CBSE board with <span class="highlight">71%</span>.
+            I completed 12th grade in the state board with <span class="highlight">81%</span>.
+            I am currently attending Freshworks Software academy.
+        </P>
     </section>
 
-    <!-- Github Contributions -->
-    <section class="heatmap">
-      <h1>My GitHub Contributions:</h1>
-      <div id="github-heatmap">
-        <iframe src="https://github-readme-stats.vercel.app/api?username=ThMizh21" title="github Contributions"
-          width="800px" height="800px" frameborder="0"></iframe>
-          <h2>GRADE</h2>
-      </div>
-      <script src="./js/script5.js"></script>
+    <!-- Skills -->
+    <section id="skill">
+        <h1>SKILLS:</h1>
+        <div class="skills">
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <!-- HTML -->
+        <div id="html">
+
+
+            <div class="progress-container1">
+                <svg class="progress-ring1" width="120" height="120">
+                    <circle class="progress-ring__circle1" stroke="#e34c26" stroke-width="10" fill="transparent" r="50"
+                        cx="60" cy="60" />
+                </svg>
+                <div class="progress-text1" id="progress-text1">0%</div>
+                <script src="./js/script1.js"></script>
+            </div>
+        </div>
+
+        <!-- CSS -->
+        <div id="css">
+            <div class="progress-container2">
+                <svg class="progress-ring2" width="120" height="120">
+
+                    <circle class="progress-ring__circle2" stroke="#ffa500" stroke-width="10" fill="transparent" r="50"
+                        cx="60" cy="60" />
+                </svg>
+                <div class="progress-text2" id="progress-text2">0%</div>
+                <script src="./js/script2.js"></script>
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <div id="js">
+            <div class="progress-container3">
+                <svg class="progress-ring3" width="120" height="120">
+                    <circle class="progress-ring__circle3" stroke="#35a854" stroke-width="10" fill="transparent" r="50"
+                        cx="60" cy="60" />
+                </svg>
+                <div class="progress-text3" id="progress-text3">0%</div>
+                <script src="./js/script3.js"></script>
+            </div>
+        </div>
+
+        <!-- MySQL -->
+        <div id="mysql">
+            <div class="progress-container4">
+
+                <svg class="progress-ring4" width="120" height="120">
+                    <circle class="progress-ring__circle4" stroke="#ffffff" stroke-width="10" fill="transparent" r="50"
+                        cx="60" cy="60" />
+                </svg>
+                <div class="progress-text4" id="progress-text4">0%</div>
+                <script src="./js/script4.js"></script>
+            </div>
+        </div>
+
+        <!-- Github Contributions -->
+        <div class="heatmap">
+            <h4>MY GITHUB CONTRIBUTIONS :</h4>
+            <div id="github-heatmap">
+                <iframe src="https://github-readme-stats.vercel.app/api?username=ThMizh21" title="github Contributions"
+                    width="800px" height="800px" frameborder="0"></iframe>
+
+            </div>
+            <script src="./js/script5.js"></script>
+        </div>
+
+
     </section>
-  </section>
-  </section>
 
-  <!-- contact page -->
+   <!-- Contact -->
+    <section id="contact">
+        <section id="contact">
+            <h1>CONTACT:</h1>
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <form class="contact-form" action="https://formspree.io/f/xpwagoav" method="POST">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" id="name" placeholder="Enter your name" required>
 
-  <section id="contact">
-    <h1>CONTACT:</h1>
-    <div class="contact-container">
-      <h2>Contact Me</h2>
-      <form class="contact-form" action="https://formspree.io/f/xpwagoav" method="POST">
-        <label for="name">Name</label>
-        <input name="name" type="text" id="name" placeholder="Enter your name" required>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" id="email" placeholder="Enter your email" required>
 
-        <label for="email">Email</label>
-        <input name="email" type="email" id="email" placeholder="Enter your email" required>
-
-        <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="Your message..." rows="5" required></textarea>
-        
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-    <a href="https://github.com/ThMizh21" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/muthamizhan-b-73a44a2a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muthamizhanboobalan@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://instagram.com/me.h3ll_healer/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-  </section>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your message..." rows="5" required></textarea>
 
 
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <a href="https://github.com/ThMizh21" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muthamizhan-b-73a44a2a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muthamizhanboobalan@gmail.com" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+            <a href="https://instagram.com/me.h3ll_healer/?next=%2F" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </section>
+    </section>
 
-  </main>
+   
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
