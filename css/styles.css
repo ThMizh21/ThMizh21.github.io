@@ -66,7 +66,7 @@ section {
 
 /* Home */
 #home {
-  background-image: url(../assets/img_1.jpg);
+  background-image: url(../assets/images/background_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -155,7 +155,7 @@ section {
 
  /* Education */
 #education{
-  background-image: url(../assets/img_1.jpg);
+  background-image: url(../assets/images/background_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -195,7 +195,7 @@ section {
   
  /* Skills */
  #skill{
-  background-image: url(../assets/img_1.jpg);
+  background-image: url(../assets/images/background_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -378,7 +378,7 @@ section {
  
    
    #contact{
-    background-image: url(../assets/img_1.jpg);
+    background-image: url(../assets/images/background_img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
