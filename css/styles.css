@@ -402,7 +402,7 @@ section {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-left: 490px;
+    margin-left: 530px;
     position: relative;
     top: 20px;
    
@@ -465,41 +465,43 @@ section {
   /* Icons */
   .fa-brands,
   .fa-solid{
-   font-size: 3.7em;
+   font-size: 3em;
    box-sizing: border-box;
    width: 63px;
    height: 63px;
-   background-color: white;
+   background-color:#2eb9ff;
    border-radius: 10px;
-   color: black;
+   color: white;
+   
   }
   .fa-github{
     position: relative;
     bottom: -10vh;
     left: 32%;
-    padding-left: 0.5px;
+    padding-left: 8px;
+    padding-top: 6px;
   }
   .fa-linkedin-in{
     position: relative;
     bottom: -10vh;
     left: 37%;
-    padding-top: 3px;
-  padding-left: 3px;
+    padding-top: 5px;
+  padding-left: 10px;
   }
   .fa-envelope{
     position: relative;
     bottom: -10vh;
     left: 42%;
-    padding-left: 2px;
-    padding-top: 3px;
+    padding-left: 7px;
+    padding-top: 8px;
   }
   
   .fa-instagram{
     position: relative;
     bottom: -10vh;
     left: 47%;
-    padding-left: 5px;
-    padding-top: 0.7px;
+    padding-left: 11px;
+    padding-top: 7px;
   }
 
 
