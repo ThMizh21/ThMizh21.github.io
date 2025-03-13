@@ -128,6 +128,26 @@ section {
     margin-bottom: 295px;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  pointer-events: none;
+}
+
 .content p {
   color: white;
   font-size: 2em;
